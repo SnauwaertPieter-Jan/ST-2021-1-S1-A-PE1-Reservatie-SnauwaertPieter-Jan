@@ -1,0 +1,35 @@
+﻿<Window x:Class="PRB.PE01.Reservatiesysteem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PRB.PE01.Reservatiesysteem"
+        mc:Ignorable="d"
+        Title="Reservatiesysteem" Height="450" Width="800" Background="#FF8B4949" Loaded="Window_Loaded">
+    <Grid>
+        <TextBox x:Name="txtNaam" HorizontalAlignment="Left" Height="20" Margin="354,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" BorderBrush="#FFB0EEA3" Background="#FFB0EEA3"/>
+        <TextBox x:Name="txtKorting" HorizontalAlignment="Left" Height="20" Margin="503,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" BorderBrush="#FFB0EEA3" Background="#FFB0EEA3"/>
+        <Button x:Name="btnReserveer" Content="Reserveer" HorizontalAlignment="Left" Height="20" Margin="649,83,0,0" VerticalAlignment="Top" Width="135" Background="#FFCC7AF4" BorderBrush="#FF052060" Click="btnReserveer_Click"/>
+        <Button x:Name="btnAanvaard" Content="Aanvaard" HorizontalAlignment="Left" Height="50" Margin="682,201,0,0" VerticalAlignment="Top" Width="95" Background="#FFCC7AF4" BorderBrush="#FF052060" Click="btnAanvaard_Click"/>
+        <Button x:Name="btnWeiger" Content="Weiger" HorizontalAlignment="Left" Height="49" Margin="682,278,0,0" VerticalAlignment="Top" Width="95" Background="#FFCC7AF4" BorderBrush="#FF052060" Click="btnWeiger_Click"/>
+        <TextBox HorizontalAlignment="Left" Height="20" Margin="53,48,0,0" Text="Beginuur" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" BorderBrush="#FFA3EEE5" Background="#FFA3EEE5"/>
+        <TextBox HorizontalAlignment="Left" Height="20" Margin="201,48,0,0" Text="Einduur" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" Background="#FFA3EEE5"/>
+        <TextBox HorizontalAlignment="Left" Height="20" Margin="354,48,0,0" Text="Naam" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" BorderBrush="#FFB0EEA3" Background="#FFA3EEE5"/>
+        <TextBox HorizontalAlignment="Left" Height="20" Margin="503,50,0,0" Text="Korting" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" BorderBrush="#FFA3EEE5" Background="#FFA3EEE5"/>
+        <ComboBox x:Name="cmbBeginUur" HorizontalAlignment="Left" Height="20" Margin="53,83,0,0" VerticalAlignment="Top" Width="135" BorderBrush="#FF052060">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1">
+                    <GradientStop Color="#FFF0F0F0"/>
+                    <GradientStop Color="#FF052060" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+        </ComboBox>
+        <ComboBox x:Name="cmbEindUur" HorizontalAlignment="Left" Height="20" Margin="204,83,0,0" VerticalAlignment="Top" Width="135" BorderBrush="#FF052060" Background="#FF052060"/>
+        <Label x:Name="lblBevestigdeReservaties" Content="Bevestigde reservaties:" HorizontalAlignment="Left" Height="30" Margin="53,374,0,0" VerticalAlignment="Top" Width="150" Background="#FF6376FF"/>
+        <Label x:Name="lblGeweigerderReservaties" Content="Geweigerde reservaties:" HorizontalAlignment="Left" Height="30" Margin="208,374,0,0" VerticalAlignment="Top" Width="150" Background="#FF6376FF"/>
+        <Label x:Name="lblWachtLijst" Content="Wachtlijst:" HorizontalAlignment="Left" Height="30" Margin="364,374,0,0" VerticalAlignment="Top" Width="150" Background="#FF6376FF"/>
+        <Label x:Name="lblInkomsten" Content="Inkomsten:" HorizontalAlignment="Left" Height="30" Margin="519,374,0,0" VerticalAlignment="Top" Width="150" Background="#FF6376FF"/>
+        <ListBox x:Name="lstFeedBack" HorizontalAlignment="Left" Height="209" Margin="53,141,0,0" VerticalAlignment="Top" Width="616"/>
+
+    </Grid>
+</Window>

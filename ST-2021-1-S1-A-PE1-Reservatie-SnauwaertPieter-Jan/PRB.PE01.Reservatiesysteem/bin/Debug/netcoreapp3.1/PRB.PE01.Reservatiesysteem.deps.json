@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "PRB.PE01.Reservatiesysteem/1.0.0": {
+        "runtime": {
+          "PRB.PE01.Reservatiesysteem.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PRB.PE01.Reservatiesysteem/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
